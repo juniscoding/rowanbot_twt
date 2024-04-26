@@ -1,8 +1,9 @@
 # Building your own Twitter quote bot
 
 * Create an account for your bot
-* Go to the [Delevopers](https://developer.twitter.com/) Portal and get started with a Free account (It allows to make up to 1500 posts per month, which translates to approximately a post every 30 minutes)
-* Create a Project and an App inside of it, it should be free to have one each per account
+* Go to the [Delevopers Portal](https://developer.twitter.com/en/portal), scroll to the bottom and get started with a Free account (It allows to make up to 1500 posts per month, which translates to approximately a post every 30 minutes)
+* It'll ask you to write a text with 250 characters about the intended use of the API, just describe the bot until it hits the minimum
+* Your dashboard will already show a Project and App created for you with a random name, you can rename both of these if you want but it's also not necessary
 
 ## Gathering quotes
 
@@ -62,7 +63,8 @@ def post_quote():
 
 * Inside your environment, click **Add secret** and add your **API Key** as `CONSUMER_KEY` and **API Key Secret** as `CONSUMER_SECRET`
 
-* Back in the Devoloper Portal, regenerate the **Access Token and Secret** (Make sure they say **Created with Read and Write permissions**)
+* Back in the Devoloper Portal, regenerate the **Access Token and Secret** 
+Make sure they say **Created with Read and Write permissions**. If that's not the case, go to the App's **Settings** page and scroll to the bottom, where there should be an option for setting up you **User authentication settings**.
 
 * Add the **Access Token** as secret on Github with the name `ACCESS_TOKEN` and the **Access Secret** as `ACCESS_TOKEN_SECRET`
 
