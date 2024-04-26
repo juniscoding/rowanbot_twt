@@ -15,7 +15,7 @@ bot = tweepy.Client(
     access_token= os.environ['ACCESS_TOKEN'],
     access_token_secret= os.environ['ACCESS_TOKEN_SECRET'])
 
-def post_quotes():
+def post_quote():
 	book = random.choice(list(data.keys()))
 	book_quotes = data[book]
 	random_index = random.randint(0, len(book_quotes)-1)
