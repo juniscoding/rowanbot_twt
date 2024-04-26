@@ -1,8 +1,8 @@
 # Building your own Twitter quote bot
 
 * Create an account for your bot
-* Go to the Delevopers portal and get started with a Free account (It allows to make up to 1500 posts per month, which translates to approximately a post every 30 minutes)
-* Create a Project and an App inside of it, it should be free to have one each
+* Go to the [Delevopers](https://developer.twitter.com/) Portal and get started with a Free account (It allows to make up to 1500 posts per month, which translates to approximately a post every 30 minutes)
+* Create a Project and an App inside of it, it should be free to have one each per account
 
 ## Gathering quotes
 
