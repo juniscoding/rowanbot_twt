@@ -5,9 +5,9 @@ on:
 #  schedule:
 #  - cron: '30 * * * *'
   
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 jobs:
   build:
     environment: login
@@ -30,8 +30,8 @@ jobs:
           
       - name: executing python script
         env:
-            ACCESS_TOKEN: ${{ secrets.DQD_ACCESS_TOKEN }}
-            ACCESS_TOKEN_SECRET: ${{ secrets.DQD_ACCESS_TOKEN_SECRET }}
-            CONSUMER_KEY: ${{ secrets.DQD_CONSUMER_KEY }}
-            CONSUMER_SECRET: ${{ secrets.DQD_CONSUMER_SECRET }}
+            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+            ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+            CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
+            CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
         run: python main.py
