@@ -19,6 +19,6 @@ def post_quote():
 	key = random.choice(list(data.keys()))
 	quotes = data[key]
 	random_index = random.randint(0, len(quotes)-1)
-	quote = book_quotes[random_index]
+	quote = quotes[random_index]
 	r = bot.create_tweet(text=quote)
 	return None
