@@ -62,7 +62,7 @@ def post_quote():
 
 * Inside your environment, click **Add secret** and add your **API Key** as `CONSUMER_KEY` and **API Key Secret** as `CONSUMER_SECRET`
 
-* Back in the Devoloper Portal, regenerate the **Access Token and Secret**
+* Back in the Devoloper Portal, regenerate the **Access Token and Secret** (Make sure they say **Created with Read and Write permissions**)
 
 * Add the **Access Token** as secret on Github with the name `ACCESS_TOKEN` and the **Access Secret** as `ACCESS_TOKEN_SECRET`
 
