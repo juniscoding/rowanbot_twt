@@ -54,7 +54,7 @@ def post_quote():
 
 * Click on **Manage environment secrets**
 
-* Create new environment called **login**
+* Create new environment called **login** (If there's already an environment with that name created, click on it and ignore this step)
 
 * From your [Developer Portal dashboard](https://developer.twitter.com/en/portal/dashboard), click on your App and go to **Keys and Tokens**
 
