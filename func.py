@@ -7,16 +7,13 @@ with open('quotes.json') as quotes:
     data = json.load(quotes)
 
 
-# auth = tweepy.OAuth2BearerHandler("Bearer Token here")
-# api = tweepy.API(auth)
-
 bot = tweepy.Client(
     #Consumer Keys
-    consumer_key=str(os.environ['CONSUMER_KEY']),
-    consumer_secret=str(os.environ['CONSUMER_SECRET']),
+    consumer_key= os.environ['CONSUMER_KEY'],
+    consumer_secret= os.environ['CONSUMER_SECRET'],
     # Access Token and Secret
-    access_token=str(os.environ['ACCESS_TOKEN']),
-    access_token_secret=str(os.environ['ACCESS_TOKEN_SECRET']))
+    access_token= os.environ['ACCESS_TOKEN'],
+    access_token_secret= os.environ['ACCESS_TOKEN_SECRET'])
 
 def post_quote():
 	book = random.choice(list(data.keys()))
