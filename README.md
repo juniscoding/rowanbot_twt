@@ -100,6 +100,8 @@ on:
     - cron: '0 6,18 * * *' # posts at 6 AM and 6 PM
 ```
 
+A lot of GitHub Actions are schedule to run on the hour, which might cause delays on the bot. If you wish to curb that, set a different minute for the post, such as `- cron: '47 * * * *' # posts every hour at minute 47`.
+
 ## Troubleshoot
 
 Check the tab **Actions** to see if your bot ran the workflow correctly. Any doubts or issues can be posted [here](https://github.com/juniscoding/rowanbot_twt/issues).
