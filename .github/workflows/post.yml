@@ -1,4 +1,4 @@
-name: runs-ttbot
+name: "Post quote"
 
 on:
   schedule:
