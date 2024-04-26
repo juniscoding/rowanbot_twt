@@ -1,10 +1,11 @@
 import os
 import tweepy
 import json
-from random import randint
+import random
 
 with open('quotes.json') as quotes:
     data = json.load(quotes)
+
 
 bot = tweepy.Client(
     #Consumer Keys
@@ -15,10 +16,10 @@ bot = tweepy.Client(
     access_token_secret= os.environ['ACCESS_TOKEN_SECRET'])
 
 def post_quotes():
-	book = random.choice(data.keys())
+	book = random.choice(list(data.keys()))
     book_quotes = data[book]
-    random_index = randint(0, len(book_quotes)-1)
+    random_index = random.randint(0, len(book_quotes)-1)
     quote = book_quotes[random_index]
     r = bot.create_tweet(text=quote)
-    print(r)
+    print(book)
     return None
