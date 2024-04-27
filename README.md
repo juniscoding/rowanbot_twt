@@ -45,7 +45,7 @@ def post_quote():
 	return None
 ```
 
-**Be careful if your quotes include quotation marks**. Since the delimiter for the quotes is also "" this can lead to breaks in the code. All quotation marks that you wish to be part of the quote must be added as \" so the code knows to read it as part of the string. You can use [an online JSON formatter](https://jsonformatter.curiousconcept.com/) to make sure everything is okay.
+**Be careful if your quotes include quotation marks**. Since the delimiter for the quotes is also "" this can lead to breaks in the code. All quotation marks that you wish to be part of the quote must be added as `\"` so the code knows to read it as part of the string. You can use [an online JSON formatter](https://jsonformatter.curiousconcept.com/) to make sure everything is okay.
 
 * Once your desired changes to `quotes.json` and `func.py` have been made, reupload the files to the repository with the same name (I am aware that this is not the best practice for a Git repository. You can do this the correct way, by commiting the changes on your local repo and pushing it into Github or even making a new branch and creating a pull request (overkill imo, but this tutorial is meant to help people with no programming skills, so mind your business). If you wish to learn how to submit these changes through the command line on your computer, check this [tutorial](https://docs.github.com/en/get-started/using-git).
 
@@ -102,6 +102,9 @@ on:
 
 A lot of GitHub Actions are schedule to run on the hour, which might cause delays on the bot. If you wish to curb that, set a different minute for the post, such as `- cron: '47 * * * *' # posts every hour at minute 47`.
 
-## Troubleshoot
+## Known problems and troubleshoot
+
+* The Twitter API doesn't allow for duplicate tweets and might skip a scheduled post occasionaly. The code somewhat accounts for that, but not in a elegant or 100% foolproof way. A better solution is in the works.
+
 
 Check the tab **Actions** to see if your bot ran the workflow correctly. Any doubts or issues can be posted [here](https://github.com/juniscoding/rowanbot_twt/issues).
